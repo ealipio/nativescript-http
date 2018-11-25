@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiService } from './api.service';
 import { IResponse } from './message-model';
 
@@ -7,7 +7,7 @@ import { IResponse } from './message-model';
   moduleId: module.id,
   templateUrl: './app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   data: any;
   constructor(private api: ApiService) {}
   ngOnInit() {
