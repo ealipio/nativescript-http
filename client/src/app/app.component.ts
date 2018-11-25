@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { ApiService } from './api.service';
-interface IResponse {
-    message: string
-}
+import { IResponse } from './message-model';
+
 @Component({
   selector: 'ns-app',
   moduleId: module.id,
@@ -18,7 +17,7 @@ export class AppComponent {
   getData(): void {
     this.api.getData().subscribe((response: IResponse) => {
       this.data = response;
-      console.log(response.message);
+      console.log('--',response.message);
     });
   }
 }
