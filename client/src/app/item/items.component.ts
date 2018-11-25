@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Item } from './item';
 import { ItemService } from './item.service';
 import { Page } from 'ui/page';
+import { device } from 'platform';
 
 @Component({
   selector: 'ns-items',
@@ -17,7 +18,9 @@ export class ItemsComponent implements OnInit {
   constructor(
       private itemService: ItemService,
       private page: Page) {
-          page.actionBarHidden = true;
+          // page.actionBarHidden = true;
+          page.backgroundSpanUnderStatusBar = true;
+          this.actionTitle = device.model;
       }
 
   ngOnInit(): void {
