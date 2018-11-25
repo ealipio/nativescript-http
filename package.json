@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "android": "tns run android",
-    "build": "tsc",
-    "dev": "node server/server.js"
+    "server:build": "tsc -project ./server/tsconfig.json",
+    "server:start": "node server/server.js"
   },
   "author": "Eisson Alipio",
   "license": "ISC",

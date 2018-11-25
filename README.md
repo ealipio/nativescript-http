@@ -4,12 +4,12 @@ Here we have a rest api that expose and endpoint to show a message, then we are 
 ## server
 To run the server follow the comands below:
 ```bash
-# install depencies
+# install depencies ( I prefer this alias )
 npm i
-# generate js files
-npm run build
+# build the server
+npm run server:build
 # start the application in development environment
-npm run dev
+npm run server:start
 ```
 ## client
 To run the server follow the comands below:
