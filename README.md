@@ -24,8 +24,9 @@ tns platform add android
 tns run android
 # now you will see: "Holly Molly putitos" in the console log :) yey!
 ```
+I recommend to run client and server in a diferent vsCode window (codelyzer works well in that way)
 
-We are using the following software version:
+##We are using the following software version:
 
 * angular 7
 * nativescript v5.0.0
