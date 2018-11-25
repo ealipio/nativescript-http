@@ -14,13 +14,15 @@ npm run server:start
 ## client
 To run the server follow the comands below:
 ```bash
+cd client/
 # install depencies
 npm i
 # add android platform
 tns platform add android
+# edit src/app/api.service api property with your ip address
 # after connect an android device with USB debugging or install an emulator of android
 tns run android
-
+# now you will see: "Holly Molly putitos" in the console log :) yey!
 ```
 
 We are using the following software version:
