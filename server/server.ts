@@ -1,12 +1,16 @@
 import * as express from 'express';
 import {Express, Router, Request, Response} from 'express';
 import * as http from 'http';
+import { IResponse } from './app/models/domain/message.model';
 const app : Express =  express();
 
 const router: Router = express.Router();
 
 router.get('/', function(req, res) {
-  res.json({message: 'Holly Molly putitos!'})
+  const message: IResponse = {
+    message: 'Holly Molly putitos! :)'
+  }
+  res.json(message)
 })
 
 app.use('/api', router);
