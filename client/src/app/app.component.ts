@@ -7,7 +7,6 @@ import { IResponse } from './message-model';
   moduleId: module.id,
   templateUrl: './app.component.html',
 })
-
 export class AppComponent {
   data: any;
   constructor(private api: ApiService) {}
@@ -17,7 +16,7 @@ export class AppComponent {
   getData(): void {
     this.api.getData().subscribe((response: IResponse) => {
       this.data = response;
-      console.log('--',response.message);
+      console.log(response.message);
     });
   }
 }
