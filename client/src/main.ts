@@ -2,6 +2,7 @@
 import { platformNativeScriptDynamic } from 'nativescript-angular/platform';
 
 import { AppModule } from './app/app.module';
+import { AppOptions } from 'nativescript-angular/platform-common';
 
 /**
  A traditional NativeScript application starts by initializing
@@ -10,5 +11,8 @@ import { AppModule } from './app/app.module';
  A NativeScript Angular app needs to make both paradigms work together, so we provide
  a wrapper platform object, platformNativeScriptDynamic, that sets up a NativeScript application and can bootstrap the Angular framework.
  */
+const appOptions: AppOptions = {
+  startPageActionBarHidden: true
+};
 
-platformNativeScriptDynamic().bootstrapModule(AppModule);
+platformNativeScriptDynamic(appOptions).bootstrapModule(AppModule);
