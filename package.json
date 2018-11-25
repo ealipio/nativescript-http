@@ -1,0 +1,21 @@
+{
+  "name": "rpsapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "android": "tns run android",
+    "build": "tsc",
+    "dev": "node server/server.js"
+  },
+  "author": "Eisson Alipio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.12.10",
+    "typescript": "^3.1.6"
+  }
+}
