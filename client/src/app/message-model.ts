@@ -1,3 +1,3 @@
 export interface IResponse {
-  message: string
+  message: string;
 }

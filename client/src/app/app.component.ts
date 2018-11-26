@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
+import { TranslateService } from '@ngx-translate/core';
+
 import { ApiService } from './api.service';
 import { IResponse } from './message-model';
 
@@ -9,7 +12,13 @@ import { IResponse } from './message-model';
 })
 export class AppComponent implements OnInit {
   data: any;
-  constructor(private api: ApiService) {}
+  constructor(
+    private api: ApiService,
+    private translateService: TranslateService,
+    ) {
+    this.translateService.setDefaultLang('en');
+    // translateService.use('en');
+  }
   ngOnInit() {
     // this.getData();
   }

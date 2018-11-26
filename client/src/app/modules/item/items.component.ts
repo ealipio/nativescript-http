@@ -16,12 +16,13 @@ export class ItemsComponent implements OnInit {
 
   // Angular knows about this service because it is included in your app’s main NgModule, defined in app.module.ts.
   constructor(
-      private itemService: ItemService,
-      private page: Page) {
-          // page.actionBarHidden = true;
-          page.backgroundSpanUnderStatusBar = true;
-          this.actionTitle = device.model;
-      }
+    private itemService: ItemService,
+    private page: Page,
+  ) {
+    // page.actionBarHidden = true;
+    page.backgroundSpanUnderStatusBar = true;
+    this.actionTitle = device.model;
+  }
 
   ngOnInit(): void {
     this.items = this.itemService.getItems();

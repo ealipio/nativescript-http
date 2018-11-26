@@ -1,6 +1,6 @@
-import { Http } from '@angular/http';
+import {HttpClient} from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-export const createTranslationLoader = (http: Http) => {
+export const createTranslationLoader = (http: HttpClient) => {
     return new TranslateHttpLoader(<any>http, '/assets/i18n/', '.json');
 };
