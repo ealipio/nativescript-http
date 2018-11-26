@@ -22,7 +22,7 @@ tns platform add android
 # edit src/app/api.service api property with your ip address
 # after connect an android device with USB debugging or install an emulator of android
 tns run android
-# now you will see: "Holly Molly putitos" in the console log :) yey!
+# now you will see: "Holly Molly" in the console log :) yey!
 ```
 I recommend to run client and server in a diferent vsCode window (codelyzer works well in that way)
 

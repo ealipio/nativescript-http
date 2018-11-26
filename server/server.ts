@@ -8,7 +8,7 @@ const router: Router = express.Router();
 
 router.get('/', function(req, res) {
   const message: IResponse = {
-    message: 'Holly Molly putitos! :)'
+    message: 'Holly Molly :)'
   }
   res.json(message)
 })
