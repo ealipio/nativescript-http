@@ -12,7 +12,7 @@ npm run server:build
 npm run server:start
 ```
 ## client
-To run the server follow the comands below:
+Note: you should install an emulator before run this commands.
 ```bash
 cd client/
 # install depencies
