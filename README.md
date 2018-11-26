@@ -12,7 +12,7 @@ npm run server:build
 npm run server:start
 ```
 ## client
-To run the server follow the comands below:
+Note: you should install an emulator before run this commands.
 ```bash
 cd client/
 # install depencies
@@ -26,7 +26,7 @@ tns run android
 ```
 I recommend to run client and server in a diferent vsCode window (codelyzer works well in that way)
 
-##We are using the following software version:
+## We are using the following software version:
 
 * angular 7
 * nativescript v5.0.0
