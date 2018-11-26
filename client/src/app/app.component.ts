@@ -16,7 +16,10 @@ export class AppComponent implements OnInit {
     private api: ApiService,
     private translateService: TranslateService,
     ) {
+
+    this.translateService.addLangs(['en', 'es']);
     // this.translateService.setDefaultLang('en');
+    // console.error(this.translateService);
     // translateService.use('en');
   }
   ngOnInit() {

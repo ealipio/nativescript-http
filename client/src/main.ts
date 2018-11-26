@@ -3,6 +3,9 @@ import { platformNativeScriptDynamic } from 'nativescript-angular/platform';
 
 import { AppModule } from './app/app.module';
 import { AppOptions } from 'nativescript-angular/platform-common';
+import { setAppEvents } from './app/globals/app-events';
+
+setAppEvents();
 
 /**
  A traditional NativeScript application starts by initializing

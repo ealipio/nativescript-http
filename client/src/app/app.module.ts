@@ -16,6 +16,8 @@ import { ItemDetailComponent } from './modules/item/item-detail.component';
 import { CoreModule } from './core/core.module';
 import { createTranslationLoader } from './utils';
 
+import './utils/console-color';
+
 @NgModule({
   bootstrap: [AppComponent],
   imports: [
