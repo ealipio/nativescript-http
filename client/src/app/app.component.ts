@@ -4,6 +4,8 @@ import { TranslateService } from '@ngx-translate/core';
 
 import { ApiService } from './api.service';
 import { IResponse } from './message-model';
+// import { Store } from './core/state/app-store';
+// import { PtItem } from './core/models/domain';
 
 @Component({
   selector: 'ns-app',
@@ -11,13 +13,15 @@ import { IResponse } from './message-model';
   templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
+  // items$ = this.store.select<PtItem[]>('backlogItems');
   data: any;
   constructor(
     private api: ApiService,
-    private translateService: TranslateService,
-    ) {
+    // private store: Store,
+    private translateService: TranslateService
+  ) {
 
-    this.translateService.addLangs(['en']);
+    // this.translateService.addLangs(['en']);
     // this.translateService.setDefaultLang('en');
     // this.translateService.use('en');
   }

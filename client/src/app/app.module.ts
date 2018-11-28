@@ -17,6 +17,7 @@ import { CoreModule } from './core/core.module';
 import { createTranslationLoader } from './utils';
 
 import './utils/console-color';
+import './rxjs-imports';
 
 @NgModule({
   bootstrap: [AppComponent],

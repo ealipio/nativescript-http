@@ -7,14 +7,14 @@ import { Item } from './item';
 })
 export class ItemService {
   private items = new Array<Item>(
-    { id: 1, name: 'Ter Stegen', role: 'Goalkeeper' },
-    { id: 3, name: 'Piqué', role: 'Defender' },
-    { id: 4, name: 'I. Rakitic', role: 'Midfielder' },
-    { id: 5, name: 'Sergio', role: 'Midfielder' },
-    { id: 6, name: 'Denis Suárez', role: 'Midfielder' },
-    { id: 7, name: 'Arda', role: 'Midfielder' },
-    { id: 8, name: 'A. Iniesta', role: 'Midfielder' },
-    { id: 9, name: 'Suárez', role: 'Forward' },
+    { id: 1, name: 'Eisson Alipio', role: 'Goalkeeper' },
+    { id: 3, name: 'Henry Chavez', role: 'Defender' },
+    { id: 4, name: 'Manuel Lajo', role: 'Midfielder' },
+    { id: 5, name: 'Sergio Espinoza', role: 'Midfielder' },
+    { id: 6, name: 'Yessi Soto', role: 'Midfielder' },
+    { id: 7, name: 'Marianne', role: 'Midfielder' },
+    { id: 8, name: 'Nila', role: 'Midfielder' },
+    { id: 9, name: 'Victoria', role: 'Forward' },
     { id: 10, name: 'Messi', role: 'Forward' },
     { id: 11, name: 'Neymar', role: 'Forward' },
     { id: 12, name: 'Rafinha', role: 'Midfielder' },

@@ -6,15 +6,20 @@
   "scripts": {
     "android": "tns run android",
     "server:build": "tsc -project ./server/tsconfig.json",
-    "server:start": "node server/server.js"
+    "server:run": "node server/server.js"
   },
   "author": "Eisson Alipio",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "@types/express": "^4.16.0",
+    "@types/faker": "^4.1.4",
+    "@types/lodash": "^4.14.118",
     "@types/node": "^10.12.10",
     "typescript": "^3.1.6"
   }
